@@ -222,7 +222,7 @@ int main(int argc, char ** argv) {
                                 d = (dnaStandardDev * c) + dnaMean; // find D
                                 string random;
                                 d = round(d);
-                                // For size d, print dna string based on relative probabilyt of
+                                // For size d, print dna string based on relative probability of
                                 // nucleotides.
                                 for (size_t i = 0; i < d; i++) {
                                         double val = (double) rand() * (1.0 / RAND_MAX);
