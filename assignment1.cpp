@@ -17,8 +17,7 @@ int main(int argc, char ** argv) {
         float dnaMean = 0;
         float dnaStandardDev = 0;
         int y = 0, progCount = 0, difference = 0;
-        string currentLine = "", inFileLineLengths = "", inFileNucleotideChars = "",
-               userPath = "";
+        string currentLine = "", inFileLineLengths = "", inFileNucleotideChars = "", userPath = "";
 
         do {
                 // Determine whether to use commandline args path or user input path
@@ -242,7 +241,7 @@ int main(int argc, char ** argv) {
                                 outFile << generatedDNA << endl;
                         }
                 } else {
-                        cout << "Failed to open file..." << argv << endl;
+                        cout << "Failed to open file..." << userPath << endl;
                 }
 
                 cout << "Do you want to process another list(y/n) ?" << endl;
@@ -253,7 +252,7 @@ int main(int argc, char ** argv) {
                         break;
                 } else {
                         condition = true;
-                        std::cout << "Please enter new File Name... : " << '\n';
+                        std::cout << "Please enter new File Name... : " << endl;
                         cin >> userPath;
                 }
                 progCount++;
